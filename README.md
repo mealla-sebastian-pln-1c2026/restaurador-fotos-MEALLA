@@ -1,5 +1,9 @@
 # Restaurador de fotos
 
+## Declaracion del Proyecto
+
+Mi sistema permite que Ramón (productor hortícola de tomate y pimiento, sin conocimientos de IA) pueda agrandar 4 veces las fotos chicas y borrosas de sus hojas antes de mandárselas al ingeniero agrónomo, aplicando el modelo de difusión stabilityai/stable-diffusion-x4-upscaler y verificando resultados con SigLIP zero-shot, que compara la foto original con la agrandada. Le advierte que los píxeles nuevos los generó una IA: una mancha puede haber sido dibujada o borrada por el modelo, así que antes de diagnosticar hay que confirmarla con otra foto más de cerca o revisando la planta.
+
 ## Persona usuaria
 
 **Nombre:** Ramón
