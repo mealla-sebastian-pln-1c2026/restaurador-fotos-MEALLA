@@ -40,3 +40,10 @@ o espera a que el agrónomo vaya al campo, que puede tardar días.
 A la tarde, después de recorrer el campo, en la computadora de su hija
 o en la de la cooperativa. Tiene tiempo, pero no paciencia para
 programas complicados.
+
+## Créditos de las imágenes de ejemplo
+
+| Archivo | Autor | Licencia | Fuente |
+|---|---|---|---|
+| hoja_01.jpg | Wolan268 | CC0 | Wikimedia Commons |
+| hoja_02.jpg | Alan Collmer, Cornell University | CC0 | Wikimedia Commons |
