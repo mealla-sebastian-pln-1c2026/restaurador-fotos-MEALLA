@@ -47,3 +47,6 @@ programas complicados.
 |---|---|---|---|
 | hoja_01.jpg | Wolan268 | CC0 | Wikimedia Commons |
 | hoja_02.jpg | Alan Collmer, Cornell University | CC0 | Wikimedia Commons |
+| hoja_02.jpg (es de Scot Nelson, CC0) y agregá 
+| hoja_03.jpg (Alan Collmer, Cornell University, CC0) 
+| hoja_04.jpg (Elizabeth Bush, Virginia Tech, CC BY 3.0).

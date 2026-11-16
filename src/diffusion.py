@@ -7,7 +7,7 @@ MODELO = "stabilityai/stable-diffusion-x4-upscaler"
 LADO_MAXIMO = 128  # en CPU, entradas más grandes tardan demasiado
 
 
-dispositivo = "cuda" if torch.cuda.is_available () else "cpu"
+dispositivo = "cuda" if torch.cuda.is_available() else "cpu"
 
 # El modelo se carga UNA sola vez, al importar el archivo
 pipe = StableDiffusionUpscalePipeline.from_pretrained(MODELO)

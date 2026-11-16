@@ -3,9 +3,7 @@ import gradio as gr
 
 from src.diffusion import linea_base, restaurar
 
-AVISO = "foto agrandada con IA tiene detalles que dibujó el programa y que pueden no estar en la hoja real. No la mandes sola: enviale al ingeniero también la foto original."
-
-
+AVISO = "### ⚠️ Atención: la foto agrandada con IA tiene detalles…"
 def procesar(imagen, progreso=gr.Progress()):
     """Devuelve la versión sin IA y la versión con IA de la misma foto."""
     if imagen is None:
@@ -19,11 +17,11 @@ def procesar(imagen, progreso=gr.Progress()):
 
 with gr.Blocks(title="Agrandar fotos de hojas") as demo:
     gr.Markdown("# Agrandar fotos de hojas")
-    gr.Markdown("Suba una foto de una hoja y haz clic en 'Agrandar foto' para ver la diferencia entre la imagen original y la versión reconstruida con IA.")
+    gr.Markdown("Subí una foto de una hoja y hacé clic en 'Agrandar foto'. Vas a ver la misma foto agrandada de dos formas: sin IA y con IA.")
     entrada = gr.Image(type="pil", label="Foto de la hoja")
     boton = gr.Button("Agrandar foto")
-    comparador = gr.ImageSlider(label="Izquierda: sin IA  |  Derecha: con IA")
     aviso = gr.Markdown()
+    comparador = gr.ImageSlider(label="Izquierda: sin IA  |  Derecha: con IA")
     boton.click(procesar, entrada, [comparador, aviso])
 
 demo.launch()
