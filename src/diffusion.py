@@ -25,9 +25,10 @@ def restaurar(imagen: Image.Image, pasos: int = 20) -> Image.Image:
     """Devuelve la imagen agrandada x4 por el modelo de difusión."""
     chica = achicar(imagen)
     resultado = pipe(
-        prompt="foto de una hoja de planta",  # orienta al modelo: los detalles que genere serán de hoja
+        prompt="a close-up photo of a plant leaf",  # orienta al modelo: los detalles que genere serán de hoja
         image=chica,
         num_inference_steps=pasos,
+        generator=torch.Generator().manual_seed(42),  # misma semilla = mismo resultado siempre
     ).images[0]
     return resultado
 
