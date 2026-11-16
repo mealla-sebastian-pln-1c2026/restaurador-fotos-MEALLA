@@ -11,3 +11,4 @@ wheels/
 # Secretos y tokens (nunca a GitHub)
 .env
 *.key
+salida_*.png
